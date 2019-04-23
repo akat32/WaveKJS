@@ -54,9 +54,10 @@ class Main extends Component {
     }
     render () {
         return (
-            <div>
-                asdasdsad
-            </div>
+            <div
+                style={{ width: '400px', height: '400px' }}
+                ref={(mount) => { this.mount = mount }}
+            />
         )
     }
 }
