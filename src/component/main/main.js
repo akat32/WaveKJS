@@ -1,9 +1,13 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component } from 'react';
 
-export const Main = () =>{
-    return (
-        <div>
-            에헤헤
-        </div>
-    )
+class Main extends Component {
+    render () {
+        return (
+            <div>
+                에헤헤
+            </div>
+        )
+    }
 }
+
+export { Main }
