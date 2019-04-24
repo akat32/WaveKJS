@@ -1,1 +1,1 @@
-export { Main } from './main/main'
+export { Box } from './Box/Box'

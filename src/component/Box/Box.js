@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 
 import * as THREE from 'three'
 
-class Main extends Component {
+class Box extends Component {
     componentDidMount () {
         const width = this.mount.clientWidth
         const height = this.mount.clientHeight
 
         // ADD scene
         this.scene = new THREE.Scene()
-
         //ADD Camera
         this.camera = new THREE.PerspectiveCamera(
             75,
@@ -24,6 +23,7 @@ class Main extends Component {
         this.renderer.setClearColor('#000000')
         this.renderer.setSize(width, height)
         this.mount.appendChild(this.renderer.domElement)
+        
          //ADD CUBE
         const geometry = new THREE.BoxGeometry(1, 1, 1)
         const material = new THREE.MeshBasicMaterial({ color: '#433F81' })
@@ -55,11 +55,11 @@ class Main extends Component {
     render () {
         return (
             <div
-                style={{ width: '400px', height: '400px' }}
+                style={{ width: '500px', height: '500px' }}
                 ref={(mount) => { this.mount = mount }}
             />
         )
     }
 }
 
-export { Main }
+export { Box }
